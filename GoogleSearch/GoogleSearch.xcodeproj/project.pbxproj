@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		F4A5C2AD276D1D7C00AECBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2AC276D1D7C00AECBC2 /* AppDelegate.swift */; };
 		F4A5C2AF276D1D7C00AECBC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2AE276D1D7C00AECBC2 /* SceneDelegate.swift */; };
-		F4A5C2B1276D1D7C00AECBC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2B0276D1D7C00AECBC2 /* ViewController.swift */; };
+		F4A5C2B1276D1D7C00AECBC2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2B0276D1D7C00AECBC2 /* MainViewController.swift */; };
 		F4A5C2B4276D1D7C00AECBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A5C2B2276D1D7C00AECBC2 /* Main.storyboard */; };
 		F4A5C2B6276D1D7F00AECBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */; };
 		F4A5C2B9276D1D7F00AECBC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A5C2B7276D1D7F00AECBC2 /* LaunchScreen.storyboard */; };
+		F4A5C2C1276D222500AECBC2 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2C0276D222500AECBC2 /* UIView + Extension.swift */; };
+		F4E33657276FCD62005665B7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33656276FCD62005665B7 /* NetworkManager.swift */; };
+		F4E3365A276FCE20005665B7 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33659276FCE20005665B7 /* SearchModel.swift */; };
+		F4E33660276FD03C005665B7 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3365F276FD03C005665B7 /* UIViewController + Extension.swift */; };
+		F4E33662276FD66A005665B7 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33661276FD66A005665B7 /* UIStackView + Extension.swift */; };
+		F4E33664276FDCC7005665B7 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33663276FDCC7005665B7 /* UIButton + Extension.swift */; };
+		F4E33666276FEA14005665B7 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33665276FEA14005665B7 /* APIConstants.swift */; };
+		F4E33669276FFA6E005665B7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33668276FFA6E005665B7 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4A5C2A9276D1D7C00AECBC2 /* GoogleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A5C2AC276D1D7C00AECBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A5C2AE276D1D7C00AECBC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4A5C2B0276D1D7C00AECBC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4A5C2B0276D1D7C00AECBC2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F4A5C2B3276D1D7C00AECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A5C2B8276D1D7F00AECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A5C2BA276D1D7F00AECBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A5C2C0276D222500AECBC2 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		F4E33656276FCD62005665B7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F4E33659276FCE20005665B7 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		F4E3365F276FD03C005665B7 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		F4E33661276FD66A005665B7 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		F4E33663276FDCC7005665B7 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		F4E33665276FEA14005665B7 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F4E33668276FFA6E005665B7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		F4A5C2AB276D1D7C00AECBC2 /* GoogleSearch */ = {
 			isa = PBXGroup;
 			children = (
-				F4A5C2AC276D1D7C00AECBC2 /* AppDelegate.swift */,
-				F4A5C2AE276D1D7C00AECBC2 /* SceneDelegate.swift */,
-				F4A5C2B0276D1D7C00AECBC2 /* ViewController.swift */,
+				F4E33653276FC5AF005665B7 /* App */,
+				F4E3365E276FCEF1005665B7 /* View */,
+				F4E3365D276FCEE2005665B7 /* Model */,
+				F4E33658276FCD6F005665B7 /* Managers */,
+				F4A5C2C2276D223B00AECBC2 /* Extensions */,
 				F4A5C2B2276D1D7C00AECBC2 /* Main.storyboard */,
-				F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */,
 				F4A5C2B7276D1D7F00AECBC2 /* LaunchScreen.storyboard */,
+				F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */,
 				F4A5C2BA276D1D7F00AECBC2 /* Info.plist */,
 			);
 			path = GoogleSearch;
+			sourceTree = "<group>";
+		};
+		F4A5C2C2276D223B00AECBC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5C2C0276D222500AECBC2 /* UIView + Extension.swift */,
+				F4E3365F276FD03C005665B7 /* UIViewController + Extension.swift */,
+				F4E33661276FD66A005665B7 /* UIStackView + Extension.swift */,
+				F4E33663276FDCC7005665B7 /* UIButton + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4E33653276FC5AF005665B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5C2AC276D1D7C00AECBC2 /* AppDelegate.swift */,
+				F4A5C2AE276D1D7C00AECBC2 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F4E33658276FCD6F005665B7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F4E33656276FCD62005665B7 /* NetworkManager.swift */,
+				F4E33665276FEA14005665B7 /* APIConstants.swift */,
+				F4E33668276FFA6E005665B7 /* NetworkError.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F4E3365D276FCEE2005665B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4E33659276FCE20005665B7 /* SearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4E3365E276FCEF1005665B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4A5C2B0276D1D7C00AECBC2 /* MainViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A5C2BD276D1D7F00AECBC2 /* Build configuration list for PBXNativeTarget "GoogleSearch" */;
 			buildPhases = (
+				F4E33667276FF63B005665B7 /* ShellScript */,
 				F4A5C2A5276D1D7C00AECBC2 /* Sources */,
 				F4A5C2A6276D1D7C00AECBC2 /* Frameworks */,
 				F4A5C2A7276D1D7C00AECBC2 /* Resources */,
@@ -133,12 +198,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F4E33667276FF63B005665B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F4A5C2A5276D1D7C00AECBC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A5C2B1276D1D7C00AECBC2 /* ViewController.swift in Sources */,
+				F4E33657276FCD62005665B7 /* NetworkManager.swift in Sources */,
+				F4E33660276FD03C005665B7 /* UIViewController + Extension.swift in Sources */,
+				F4E33664276FDCC7005665B7 /* UIButton + Extension.swift in Sources */,
+				F4A5C2C1276D222500AECBC2 /* UIView + Extension.swift in Sources */,
+				F4E33669276FFA6E005665B7 /* NetworkError.swift in Sources */,
+				F4A5C2B1276D1D7C00AECBC2 /* MainViewController.swift in Sources */,
+				F4E3365A276FCE20005665B7 /* SearchModel.swift in Sources */,
+				F4E33666276FEA14005665B7 /* APIConstants.swift in Sources */,
+				F4E33662276FD66A005665B7 /* UIStackView + Extension.swift in Sources */,
 				F4A5C2AD276D1D7C00AECBC2 /* AppDelegate.swift in Sources */,
 				F4A5C2AF276D1D7C00AECBC2 /* SceneDelegate.swift in Sources */,
 			);
