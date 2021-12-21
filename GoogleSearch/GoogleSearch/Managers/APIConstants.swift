@@ -9,8 +9,8 @@ import Foundation
 
 enum APIEndpoints {
     static let mainUrl = "https://www.googleapis.com/customsearch/v1?"
-    static let apiKey = "AIzaSyBBolhMN26n43jEhoDB8-brIChBUetqOq0"
-    static let cx = "8c0d0e1ccfb95bde9"
+    static let apiKey = "AIzaSyAsJoaGQ8VZE__1uxqS-uTrkt4ogjpNUtw"
+    static let cx = "f12fba4bff1324307"
 }
 
 enum APIQueryItems {

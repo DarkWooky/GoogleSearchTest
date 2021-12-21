@@ -10,13 +10,13 @@ import Foundation
 class NetworkManager {
     static let shared = NetworkManager()
 
-    private var task = URLSessionDataTask()
+    private var task: URLSessionDataTask?
     private let session = URLSession(configuration: .default)
     private let urlSession = URLSession.shared
 
     func fetchSearchData(
         with request: String?,
-        completion: @escaping (Result<SearchResponse, NetworkError>) -> Void,
+        completion: @escaping (Result<ResponseResult, NetworkError>) -> Void,
         progress: @escaping (Progress) -> Void
     ) {
         guard let request = request else {
@@ -41,15 +41,8 @@ class NetworkManager {
             completion(.failure(.invalidEndpoint))
             return
         }
-        getAndDecode(url: finalURL, completion: completion, progress: progress)
-    }
 
-    private func getAndDecode<D: Decodable>(
-        url: URL,
-        completion: @escaping (Result<D, NetworkError>) -> Void,
-        progress: @escaping (Progress) -> Void
-    ) {
-        self.task = session.dataTask(with: url) { data, response, error in
+        self.task = session.dataTask(with: finalURL) { data, response, error in
             DispatchQueue.main.async {
                 if error != nil {
                     completion(.failure(.apiError))
@@ -59,18 +52,23 @@ class NetworkManager {
                     return
                 }
                 do {
-                    let decodeResponse = try JSONDecoder().decode(D.self, from: data)
+                    let decodeResponse = try JSONDecoder().decode(ResponseResult.self, from: data)
                     completion(.success(decodeResponse))
                 } catch {
                     completion(.failure(.serializationError))
                 }
             }
         }
+        guard let task = task else {
+            completion(.failure(.serializationError))
+            return
+        }
         progress(task.progress)
         task.resume()
     }
 
-    func stopRequest() {
+    func cancelTask() {
+        guard let task = task else { return }
         task.cancel()
     }
 }

@@ -53,25 +53,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-
-// MARK: - SwiftUI
-import SwiftUI
-
-struct VCProvider: PreviewProvider {
-    static var previews: some View {
-        ContainerView().edgesIgnoringSafeArea(.all)
-    }
-
-    struct ContainerView: UIViewControllerRepresentable {
-
-        let mvc = MainViewController()
-
-        func makeUIViewController(context: UIViewControllerRepresentableContext<VCProvider.ContainerView>) -> UIViewController {
-            return mvc
-        }
-
-        func updateUIViewController(_ uiViewController: VCProvider.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<VCProvider.ContainerView>) {
-
-        }
-    }
-}

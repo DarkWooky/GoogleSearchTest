@@ -21,6 +21,9 @@
 		F4E33664276FDCC7005665B7 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33663276FDCC7005665B7 /* UIButton + Extension.swift */; };
 		F4E33666276FEA14005665B7 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33665276FEA14005665B7 /* APIConstants.swift */; };
 		F4E33669276FFA6E005665B7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E33668276FFA6E005665B7 /* NetworkError.swift */; };
+		F4E3366B277011E0005665B7 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3366A277011E0005665B7 /* SearchService.swift */; };
+		F4E3366E2770178E005665B7 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3366D2770178E005665B7 /* MainDelegate.swift */; };
+		F4E336712771007F005665B7 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E336702771007F005665B7 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		F4E33663276FDCC7005665B7 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		F4E33665276FEA14005665B7 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F4E33668276FFA6E005665B7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F4E3366A277011E0005665B7 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		F4E3366D2770178E005665B7 /* MainDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
+		F4E336702771007F005665B7 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				F4E33653276FC5AF005665B7 /* App */,
-				F4E3365E276FCEF1005665B7 /* View */,
+				F4E3366F27701799005665B7 /* Protocol */,
 				F4E3365D276FCEE2005665B7 /* Model */,
+				F4E3365E276FCEF1005665B7 /* View */,
+				F4E3366C277011E8005665B7 /* Services */,
 				F4E33658276FCD6F005665B7 /* Managers */,
 				F4A5C2C2276D223B00AECBC2 /* Extensions */,
 				F4A5C2B2276D1D7C00AECBC2 /* Main.storyboard */,
@@ -127,8 +135,25 @@
 			isa = PBXGroup;
 			children = (
 				F4A5C2B0276D1D7C00AECBC2 /* MainViewController.swift */,
+				F4E336702771007F005665B7 /* Cell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F4E3366C277011E8005665B7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4E3366A277011E0005665B7 /* SearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4E3366F27701799005665B7 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F4E3366D2770178E005665B7 /* MainDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,14 +251,17 @@
 				F4E33657276FCD62005665B7 /* NetworkManager.swift in Sources */,
 				F4E33660276FD03C005665B7 /* UIViewController + Extension.swift in Sources */,
 				F4E33664276FDCC7005665B7 /* UIButton + Extension.swift in Sources */,
+				F4E3366E2770178E005665B7 /* MainDelegate.swift in Sources */,
 				F4A5C2C1276D222500AECBC2 /* UIView + Extension.swift in Sources */,
 				F4E33669276FFA6E005665B7 /* NetworkError.swift in Sources */,
 				F4A5C2B1276D1D7C00AECBC2 /* MainViewController.swift in Sources */,
 				F4E3365A276FCE20005665B7 /* SearchModel.swift in Sources */,
 				F4E33666276FEA14005665B7 /* APIConstants.swift in Sources */,
+				F4E336712771007F005665B7 /* Cell.swift in Sources */,
 				F4E33662276FD66A005665B7 /* UIStackView + Extension.swift in Sources */,
 				F4A5C2AD276D1D7C00AECBC2 /* AppDelegate.swift in Sources */,
 				F4A5C2AF276D1D7C00AECBC2 /* SceneDelegate.swift in Sources */,
+				F4E3366B277011E0005665B7 /* SearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

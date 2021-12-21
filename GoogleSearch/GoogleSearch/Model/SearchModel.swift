@@ -7,13 +7,12 @@
 
 import Foundation
 
-struct SearchResponse: Codable {
-    let kind : String?
+struct ResponseResult: Codable {
     let items : [Item]
 }
 
 struct Item : Codable {
     let title : String?
-    let link : String?
+    let displayLink : String?
     let snippet : String?
 }
