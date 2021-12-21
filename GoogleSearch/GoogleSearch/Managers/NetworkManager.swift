@@ -19,6 +19,11 @@ class NetworkManager {
         completion: @escaping (Result<ResponseResult, NetworkError>) -> Void,
         progress: @escaping (Progress) -> Void
     ) {
+        if !InternetConnectionObserver.isInternetAvailable() {
+            completion(.failure(.noConnection))
+            return
+        }
+
         guard let request = request else {
             return
         }
@@ -30,7 +35,6 @@ class NetworkManager {
             completion(.failure(.invalidEndpoint))
             return
         }
-
         let queryItems = [
             URLQueryItem(name: APIQueryItems.key, value: APIEndpoints.apiKey),
             URLQueryItem(name: APIQueryItems.cx, value: APIEndpoints.cx),

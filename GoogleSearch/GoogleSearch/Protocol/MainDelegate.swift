@@ -8,9 +8,10 @@
 import UIKit
 
 protocol MainDelegate: AnyObject {
+    func fetchFinished()
     func didChangeProgress(progress: Progress)
     func showProgress()
     func hideProgress()
     func showError(text: String)
-    func fetchFinished()
+    func scrollViewDidScroll(y: CGFloat)
 }

@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41655D32771595300C48A93 /* InternetConnectionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41655D22771595300C48A93 /* InternetConnectionObserver.swift */; };
+		F41655D527715C2E00C48A93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41655D427715C2E00C48A93 /* Constants.swift */; };
 		F4A5C2AD276D1D7C00AECBC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2AC276D1D7C00AECBC2 /* AppDelegate.swift */; };
 		F4A5C2AF276D1D7C00AECBC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2AE276D1D7C00AECBC2 /* SceneDelegate.swift */; };
 		F4A5C2B1276D1D7C00AECBC2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2B0276D1D7C00AECBC2 /* MainViewController.swift */; };
-		F4A5C2B4276D1D7C00AECBC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A5C2B2276D1D7C00AECBC2 /* Main.storyboard */; };
 		F4A5C2B6276D1D7F00AECBC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */; };
 		F4A5C2B9276D1D7F00AECBC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A5C2B7276D1D7F00AECBC2 /* LaunchScreen.storyboard */; };
 		F4A5C2C1276D222500AECBC2 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5C2C0276D222500AECBC2 /* UIView + Extension.swift */; };
@@ -27,11 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F41655D22771595300C48A93 /* InternetConnectionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionObserver.swift; sourceTree = "<group>"; };
+		F41655D427715C2E00C48A93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F4A5C2A9276D1D7C00AECBC2 /* GoogleSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A5C2AC276D1D7C00AECBC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A5C2AE276D1D7C00AECBC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4A5C2B0276D1D7C00AECBC2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		F4A5C2B3276D1D7C00AECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A5C2B8276D1D7F00AECBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A5C2BA276D1D7F00AECBC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +87,6 @@
 				F4E3366C277011E8005665B7 /* Services */,
 				F4E33658276FCD6F005665B7 /* Managers */,
 				F4A5C2C2276D223B00AECBC2 /* Extensions */,
-				F4A5C2B2276D1D7C00AECBC2 /* Main.storyboard */,
 				F4A5C2B7276D1D7F00AECBC2 /* LaunchScreen.storyboard */,
 				F4A5C2B5276D1D7F00AECBC2 /* Assets.xcassets */,
 				F4A5C2BA276D1D7F00AECBC2 /* Info.plist */,
@@ -100,6 +101,7 @@
 				F4E3365F276FD03C005665B7 /* UIViewController + Extension.swift */,
 				F4E33661276FD66A005665B7 /* UIStackView + Extension.swift */,
 				F4E33663276FDCC7005665B7 /* UIButton + Extension.swift */,
+				F41655D427715C2E00C48A93 /* Constants.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 				F4E33656276FCD62005665B7 /* NetworkManager.swift */,
 				F4E33665276FEA14005665B7 /* APIConstants.swift */,
 				F4E33668276FFA6E005665B7 /* NetworkError.swift */,
+				F41655D22771595300C48A93 /* InternetConnectionObserver.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -163,7 +166,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4A5C2BD276D1D7F00AECBC2 /* Build configuration list for PBXNativeTarget "GoogleSearch" */;
 			buildPhases = (
-				F4E33667276FF63B005665B7 /* ShellScript */,
 				F4A5C2A5276D1D7C00AECBC2 /* Sources */,
 				F4A5C2A6276D1D7C00AECBC2 /* Frameworks */,
 				F4A5C2A7276D1D7C00AECBC2 /* Resources */,
@@ -217,31 +219,10 @@
 			files = (
 				F4A5C2B9276D1D7F00AECBC2 /* LaunchScreen.storyboard in Resources */,
 				F4A5C2B6276D1D7F00AECBC2 /* Assets.xcassets in Resources */,
-				F4A5C2B4276D1D7C00AECBC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F4E33667276FF63B005665B7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4A5C2A5276D1D7C00AECBC2 /* Sources */ = {
@@ -254,6 +235,8 @@
 				F4E3366E2770178E005665B7 /* MainDelegate.swift in Sources */,
 				F4A5C2C1276D222500AECBC2 /* UIView + Extension.swift in Sources */,
 				F4E33669276FFA6E005665B7 /* NetworkError.swift in Sources */,
+				F41655D32771595300C48A93 /* InternetConnectionObserver.swift in Sources */,
+				F41655D527715C2E00C48A93 /* Constants.swift in Sources */,
 				F4A5C2B1276D1D7C00AECBC2 /* MainViewController.swift in Sources */,
 				F4E3365A276FCE20005665B7 /* SearchModel.swift in Sources */,
 				F4E33666276FEA14005665B7 /* APIConstants.swift in Sources */,
@@ -268,14 +251,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4A5C2B2276D1D7C00AECBC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4A5C2B3276D1D7C00AECBC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4A5C2B7276D1D7F00AECBC2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,9 +388,11 @@
 				DEVELOPMENT_TEAM = MB3D25K85N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleSearch/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Speech;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = Voice;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,9 +418,11 @@
 				DEVELOPMENT_TEAM = MB3D25K85N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoogleSearch/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = Speech;
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = Voice;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

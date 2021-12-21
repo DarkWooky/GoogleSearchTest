@@ -9,7 +9,7 @@ import Foundation
 
 enum NetworkError: Error {
     case apiError
-//    case noConnection
+    case noConnection
     case invalidEndpoint
     case invalidDataOrResponse
     case serializationError
@@ -18,8 +18,8 @@ enum NetworkError: Error {
         switch self {
         case .apiError:
             return "Stopped"
-//        case .noConnection:
-//            return "No internet connection"
+        case .noConnection:
+            return "No internet connection"
         case .invalidEndpoint:
             return "Invalid endpoint"
         case .invalidDataOrResponse:

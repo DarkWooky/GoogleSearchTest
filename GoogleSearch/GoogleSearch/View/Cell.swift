@@ -33,11 +33,13 @@ class Cell: UITableViewCell {
         let stack = UIStackView(axis: .vertical)
         stack.embedIn(contentView)
         stack.addArrangedSubviews(
-            titleLabel,
             linkLabel,
+            titleLabel,
             snippetLabel
         )
-        titleLabel.textColor = .systemBlue
+        stack.spacing = 5
+        titleLabel.font = .systemFont(ofSize: 20)
         linkLabel.textColor = .link
+        snippetLabel.numberOfLines = 3
     }
 }
